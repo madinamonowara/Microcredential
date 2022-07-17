@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Madina Monowara: Activity 8 - Functions</title>
+  </head>
+  <body>
+    <h1>Madina Monowara: Activity 8 - Functions</h1>
+    <script type="text/javascript">
+    /*
+    //example 1
+    function msg(){
+      console.log("Hello!")
+    }
+
+    //example 2 - defne a function that that orints out a number form 3 to 1
+    function printCount(){
+      for(let i=3, i>=1; i-=1){
+        console.log(i)
+      }
+    }
+
+    //example 3 - define a function that take a parameter as name and print the argument value in the console
+    function greeting(name){
+      console.log(`Hello ${name}`)
+    }
+
+    //example 4 - define a function that will take a message as an argument and convert its value in toUpperCase
+    function upperMessage(message){
+      let upper = message.toUppercase();
+      console.log(upper)
+    }
+
+    //example 5 - function with multiple parameters, no return
+    function greet(firstName, lastName){
+      console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`)
+    }
+
+    //example 6 - define a function w 2 parameters, message ans numCOunt. The functin will print the message numCount
+    function printMsg(message, numCounts){
+      for(counter = 1; counter<=numCounts; counter++){
+        console.log(`Counter ${counter} = ${message}`)
+      }
+    }
+
+    //example 7
+    function isSnakeEyes(dice1, dice2){
+      if (dice1===1 && dice2===1){
+        console.log(`Snake Eyes!`)
+      }
+      else{console.log(`Not Snake Eyes!`)}
+    }
+
+    //example 8 - - without parameters but returns value: define
+    function sumXY(){
+      let x=7, y=-3
+      return x+y
+      console.log(`HELLO WORLD!`)
+    }
+
+    //example 9
+    let userNum = parseInt(prompt('Enter a number: '))
+    function doubleNumber(number){
+      let dNumber = number*2;
+      return dNumber
+    }
+
+    let collectNum = doubleNumber(userNum)
+
+    //example 10 -
+    let a = 5/9, b=3, c=9, d=5;
+    function sumNum(num1, num2){
+      let sum = num1 + number2
+      return sum
+    }
+    let number1 = sumNum(10,d)
+    let number2 = sumNum(a, c)
+
+    //example 11
+    function isShortWeather(temperature){
+      if (temperature >= 75){return true;}
+      else{return false;}
+    }
+
+    //example 12
+    function lastElement(arrayInput){
+      if(arrayInput === undefined){return null}
+      else if(arrayInput.length !==0){
+        let lastIndex = arrayInput.length - 1;
+        return arrayInput[lastIndex]
+      }
+      else{return null}
+    }
+
+    //example 13) apply different Math methods to a PI value
+    let numP = Math.PI;
+    console.log(`PI value = ${numPI}`)
+    //Math.round() returns the nearest integer
+    console.log(`PI with Math.round() = ${Math.round(numPI)}`)
+    //Math.ceil() returns the value rounded up to its nearest intenger
+    console.log(`PI with Math.ceil() = ${Math.ceil(numPI)}`)
+    //Math.floor() returns the value rounded down to its nearet intenger
+    console.log(`PI with Math.floor() = ${Math.floor(numPI)}`)
+    //Math.trunc() returns the integer part of x
+    console.log(`PI with Math.trunc() = ${Math.trunc(numPI)}`)
+    //Math.pow(base, exponent) returns the value of the base to the power of the exponent
+    console.log(`Math.pow(2,3) = ${Math.pow(2,3)}`)
+    //Math.sqrt() returns the square root of a number
+    console.log(`Math.sqrt(85) = ${Math.sqrt(85)}`)
+    //Math.random() returns a random number between 0 (inclusive), and 1(exclusive)
+    console.log(`Math.random(85) = ${Math.random()}`)
+
+    //example 14) create a function that randomly generates a number between 10 and 20 inclusive
+    function pickNum(){
+      let pick = 10 + Math.round(Math.random()*20)
+      return pick
+    }
+
+    //example 15 - create a fnuction that randomly picks a color from an array
+    let colors = ['red', 'green', 'yellow', 'orange']
+    function colorPick(lastIndex){
+      let pick = Math.round(Math.random()*lastIndex)
+      return pick
+    }
+    //call function colorFunction()
+    pickedIndex = colorPick(color.length - 1)
+    console.log(`The picked color is ${colors[pickedIndex]}`)
+    */
+
+    // ------ ACTIVITY 8 ------ //
+    //1
+      let ms = prompt("Enter your name: ")
+      function checkName(){
+        let msg = parseInt(ms)
+        if (msg <= 0 && msg>=0){console.log(`${msg} is invalid! Enter a name again: `)}
+        else if(msg){console.log(`You forgot to enter a name. Enter a name again: `)}
+        else{console.log(`Welcome ${ms.toUpperCase()} to the class!`)}
+      }
+
+    //2
+        let number = parseInt(prompt("Enter a number: "))
+        function checkNum(){
+          number2 = number%2
+          if(number2 > 0){console.log(`FALSE`)}
+          else{console.log(`TRUE`)}
+        }
+
+    //3
+        let lottery = parseInt(prompt("Enter the number of games you want to play in this lottery: "))
+        function lottery(){
+          for(let outerCounter = 1 ; outerCounter<= lottery ; outerCounter++){
+            console.log(`LOTTERY GAME NUMBER \t\t\t ${outerCounter}`)
+            for(let ngames<=99; ngames>0;){console.log(`The numbers for this game are ${ngames.random()}`)}
+          }
+        }
+
+
+    </script>
+  </body>
+</html>

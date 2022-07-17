@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Madina Monowara: Activity 7 - Loops</title>
+  </head>
+  <body>
+    <h1>Madina Monowara: Activity 7 - Loops</h1>
+    <script type="text/javascript">
+      let input1 = parseInt(prompt("Enter a number between 1 and 10: "));
+      if(input1 > 10){
+        console.log(`${input1} is greater than 10. Enter a number less than 10.`)
+      }
+      else if(input1 < 1){
+        console.log(`${input1} is less than 1. Enter a number greater than 1.`)
+      }
+      else{
+        console.log(`You entered ${input1}`)
+      }
+      //while (input1 !== isNaN){
+        //guessNum = parseInt(prompt("WRONG! Guess another number between 0 and 10"));
+      //}
+
+
+      //7.2
+      for(let counter = input1; counter<=20; counter++){
+        console.log(`The current counter is ${counter}`)
+      }
+
+
+/*
+      while (input1 < 20){
+        console.log(`${input1}`);
+        input1++;
+      }
+*/
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
