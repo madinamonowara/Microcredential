@@ -1,0 +1,157 @@
+*{box-sizing: auto}
+/* ACTIVITY 3 */
+.act3{text-align: center;}
+.pic1, .pic2, .pic3{position: relative; width: 30%; margin-left: 2%; height: 570px;}
+.pic1{filter: invert(100%);}
+.pic2{filter: blur(5px);}
+.pic3{filter: sepia(100%);}
+.photo_d1{display: block; float: right; position: absolute; text-align: left; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,1); border: solid 5px black; box-shadow: 2px 2px 5px white; padding: 1em 1em;}
+
+.photo_d2{text-align: center; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,0.8); box-shadow: 2px 2px 5px white; position: absolute; padding: 1em;}
+.link_d2{display: block; background-color: magenta; margin-top: 1em; padding: 0.2em; border-radius: 9px; text-decoration: none;}
+.link_d2:hover{background-color: lightblue; top:30%, left:10%; right:10%; box-shadow: 0px 0px 5px 2px gray;}
+
+
+
+
+
+/* CLASS ACTIVITY */
+.title{font-family: elephant; font-size: 300%; text-align: center; }
+.intro{font-size: 30px; text-align: justify;}
+.subtitle{font-size: 0.8em; text-align: right;}
+#name1{text-shadow: -10px 0px 2px red;}
+#name2{text-shadow: 0px -10px 2px red;}
+#name3{text-shadow: -10px 0px 2px red;}
+#name4{text-shadow: 10px -10px 2px red;}
+#name5{text-shadow: 10px -10px 5px red;}
+.box1, .box2{background-color: purple; height: 100px; width: 200px; box-shadow: 5px 5px 2px black}
+.box2{box-shadow: 0px 0px 10px 5px black}
+.box3, .box4, .box5, .box6, .box7, .box8{width: 100px; height:200px;}
+.box3{background-color: yellow; margin-bottom:50px}
+.box4{background-color: green; margin-left:100px}
+.box5{background-color: lightblue; margin-left:auto; margin-right:auto;}
+.box6{background-color: gray; margin:100px;}
+.box7{background-color: orange; margin:100px 300px;}
+.box8{background-color: olive; margin:200px 100px 300px 50px;}
+
+.p1{padding-top: 50px;}
+.p2{padding: 20px 100px;}
+.p3{padding: 50px;}
+.p4{padding: 20px 50px 100px 30px;}
+
+.nature{background-color: lightgreen; font-size:300%; text-align:center; padding: 20px 0px; text-shadow: 2px 2px 5px red; width:90%; margin: auto; box-shadow: 5px 5px 5px black; color: purple;}
+
+.img_container{border:solid 1px red; width: 90%; margin:auto; margin-top: 2em;}
+.kebabs, .cake, .oats, .burger{width:43%; margin:2%; height:300px;}
+.row1, .row2, .row3{border: solid green;}
+.kebabs{border-radius: 20px; margin:2em;}
+.cake{border-radius: 50%;}
+.oats{border: dotted 20px blue; padding: 10px; background-color: yellow;}
+.burger{box-shadow: 0px 0px 5px 10px brown;}
+.pContent{border: solid purple; width: 45%; float:right; padding:1em 2em;}
+
+.contact{
+  border: solid gray;
+  background-color: gray;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact1, .contact2, .contact3{
+  border: solid red;
+  width: 27%;
+  float: left;
+  margin:1%;
+  padding: 1em 1em;
+}
+
+/* ---- COLORS ---- */
+.g1, .g2, .g3, .g4, .g5, .g6{font-size: 3em; font-family: "Arial Black";}
+.g1, .g4{color:rgb(66, 133, 244);}
+.g2, .g6{color:rgb(234, 67, 53);}
+.g3{color:rgb(, , );}
+.g5{color:rgb(, , );}
+
+.c1, .c2, .c3, .c4{font-size:2em; padding: 1em;}
+.c1{background-color: #ff36c3}
+.c2{background-color: #c80092}
+.c3{background-color: #ff74f6}
+.c4{background-color: #dcfbff}
+
+/* ----- IMAGES AND POSITION ---- */
+.photo_container{
+  border: ridge 20px gray;
+  width: 80%;
+  margin: auto;
+  position:relative;
+}
+.photo_container img{width: 100%;}
+
+.photo_p1{text-align: center; font-size: 2em; color: pink; top:0%, bottom: 20%; right: 40%; background-color: rgba(234, 67, 53, 0.8); box-shadow: 2px 2px 5px white; position: absolute; padding: 0.5em 1em;}
+.photo_img2{width: 100%;}
+.photo_p2{text-align: center; font-size: 1.2em; color: pink; bottom:20%; left: 20%; right: 20%; background-color: rgba(10,10,10,0.8); box-shadow: 2px 2px 5px white; position: absolute; padding: 1em;}
+.link_p2{display: block; background-color: magenta; margin-top: 1em; padding: 0.2em; border-radius: 9px; text-decoration: none;}
+.link_p2:hover{background-color: lightblue; top:30%, left:10%; right:10%; box-shadow: 0px 0px 5px 2px gray;}
+
+/* ---- FILTERS ---- */
+.blur1, .blur2, .blur3, .sepia1, .sepia2, .sepia3, .invert1, .invert2, .invert3{width: 30%; margin-left: 2%}
+.blur1{filter: blur(2px);}
+.blur2{filter: blur(10px);}
+.blur3{filter: blur(15px);}
+.sepia1{filter: sepia(0%);}
+.sepia2{filter: sepia(50%);}
+.sepia3{filter: sepia(100%);}
+.invert1{filter: invert(10%);}
+.invert2{filter: invert(60%);}
+.invert3{filter: invert(100%);}
+
+/* ---- ANIMATION --- */
+.animation_container{
+  border: ridge 20px gray;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.mountain{width: 100%;}
+.bus{width:30%; position: absolute; bottom: -16%; right: -15%; animation-name: moveBus; animation-duration: 5s; animation-iteration-count: 2; animation-fill-mode: forwards; animation-direction: alternate; animation-timing-function: ease-in-out;}
+@keyframes moveBus {
+  from{transform: translateX(0%);}
+  to{transform: translateX(-300%);}
+}
+
+
+.ball{width:10%; position: absolute; bottom: -1%; left: -10%; animation-name: moveBall; animation-duration: 8s; animation-delay: 10s; animation-fill-mode: forwards;}
+@keyframes moveBall {
+  0%{transform: rotate(0deg); left:0%;}
+  100%{transform: rotate(700deg); left: 100%;}
+}
+
+/* ---- animation: CLOUD--- */
+.cloud1, .cloud2, .cloud3{position: absolute;}
+.cloud1{width: 35%; top:1%; left: 3%;
+  /*animation-name: moveCloud;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;*/
+  animation: moveCloud 15s infinite;
+}
+.cloud2{width: 20%; top:5%; left: 10%; animation: moveCloud 20s infinite; }
+.cloud3{width: 30%; top:10%; left: 15%; animation: moveCloud 25s infinite; }
+@keyframes moveCloud {
+  0%{opacity: 0.8; transform: translate(0,0);}
+  20%{opacity: 1;}
+  40%{opacity: 0.5;}
+  60%{opacity: 0.3; transform: translate(200%, 50%);}
+  80%{opacity: 0.7;}
+  100%{opacity: 0.9;transform: translate(-200%, -1%);}
+}
+
+/* ---- animation: TEXT --- */
+.animation_p{position: absolute; top: 20%; bottom: 30%; text-align: center; background-color: transparent; left: 10%; right: 10%; font-size: 2em; color: white; animation: zoomTxt 8s alternate 2 forwards;}
+@keyframes zoomTxt{
+  0%{transform: scale(0); color:green; text-shadow: 5px 5px 2px black;}
+  50%{transform: scale(2); color:gray; text-shadow: -5px -5px 2px black;}
+  100%{transform: scale(0); color:red; text-shadow: 5px 5px 2px black;}
+}
