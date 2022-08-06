@@ -1,0 +1,184 @@
+
+.nyc{background-color: pink; font-size:300%; text-align:center; padding: 20px 0px; text-shadow: 2px 2px 5px red; width:95%; margin: auto; box-shadow: 5px 5px 5px black; color: purple; animation: nyc 3s 3 alternate; animation-timing-function: linear;}
+.images{box-shadow: 5px 5px 5px black; filter: sepia(50%);}
+.googlemaps{font-family: cursive; animation: googlemaps 4s steps(44) 1s 10 normal both; white-space: nowrap; overflow:hidden;}
+.directionillusion, .directionspyscape, .directioncolorfactory, .directionicecream{font-family: monospace;}
+.about{background-color: #FFA726; font-size:200%; text-align:center; padding: 15px 0px; text-shadow: 2px 2px 5px red; width:100%; margin: auto; box-shadow: 5px 5px 5px black; color: #BF360C; position: relative;}
+.ab{margin-left: 12px;}
+.location{background-color: lavender; font-size:200%; text-align:center; padding: 15px 0px; text-shadow: 2px 2px 5px purple; width:100%; margin: auto; box-shadow: 5px 5px 5px black; color: purple; position: relative;}
+.loca{margin-left: 10px;}
+.ticketprices{background-color: lightblue; font-size:200%; text-align:center; padding: 15px 0px; text-shadow: 2px 2px 5px blue; width:100%; margin: auto; box-shadow: 5px 5px 5px black; color: #0D47A1; position: relative;}
+.table{text-align:center; text-align:center; }
+.clicklink{padding: -5px;}
+.icecream{color: hotpink; animation: icecream 3s 10 alternate; animation-timing-function: linear;}
+.colorfactory{color: lightblue; animation: colorfactory 3s 10 alternate; animation-timing-function: linear;}
+.spyscape{color: lightgreen; animation: spyscape 3s 10 alternate; animation-timing-function: linear;}
+.illusions{color: blue; animation: illusions 3s 10 alternate; animation-timing-function: linear;}
+.button{background-color:pink; width:15%; height:20%; border: 1px solid black; font-size: 90%; color:white; padding: 0.5em 1em; border-radius: 12px; margin: auto; }
+.button a{
+  text-decoration: none;
+  color: white;
+}
+@keyframes googlemaps{
+  from{
+    width: 0;
+  }
+  to{
+    width: 70em;
+  }
+}
+
+@keyframes icecream{
+  0%{
+    letter-spacing: 30px;
+  }
+  30%{
+    letter-spacing: 25px;
+  }
+  60%{
+    letter-spacing: 17px;
+  }
+  85%{
+    letter-spacing: 10px;
+  }
+}
+
+@keyframes icecream{
+  0%{
+    letter-spacing: 30px;
+  }
+  30%{
+    letter-spacing: 25px;
+  }
+  60%{
+    letter-spacing: 17px;
+  }
+  85%{
+    letter-spacing: 10px;
+  }
+}
+
+@keyframes colorfactory{
+  0%{
+    letter-spacing: 18px;
+  }
+  30%{
+    letter-spacing: 15px;
+  }
+  60%{
+    letter-spacing: 10px;
+  }
+  85%{
+    letter-spacing: 5px;
+  }
+}
+
+@keyframes spyscape{
+  0%{
+    letter-spacing: 30px;
+  }
+  30%{
+    letter-spacing: 25px;
+  }
+  60%{
+    letter-spacing: 17px;
+  }
+  85%{
+    letter-spacing: 10px;
+  }
+}
+
+@keyframes illusions{
+  0%{
+    letter-spacing: 30px;
+  }
+  30%{
+    letter-spacing: 25px;
+  }
+  60%{
+    letter-spacing: 17px;
+  }
+  85%{
+    letter-spacing: 10px;
+  }
+}
+.makesure{
+  text-align: center;
+  font-family: cursive;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.goodbye{
+  text-align: center;
+}
+
+.footer{
+  background-color: black;
+  padding: 70px 0;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: pink;
+  height: 2px;
+  box-sixing: border-box;
+  width: 70px;
+}
+
+.footer-col .socials a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: darkgray;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  margin-left: -1px;
+}
+.footer-col ul li{
+  margin-bottom: 10px;
+  margin-left: -42px;
+}
+.footer-col ul li a{
+  font-size:16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-family: monospace;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.footer-col{
+  width: 30%;
+  padding: 0 15px;
+}
+
+.container{
+  max-width: 1170px;
+
+  margin: auto;
+}
+
+.footer-col ul{
+  list-style:none;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
