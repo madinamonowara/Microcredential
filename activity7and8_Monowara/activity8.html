@@ -7,6 +7,33 @@
   <body>
     <h1>Madina Monowara: Activity 8 - Functions</h1>
     <script type="text/javascript">
+    // ------ ACTIVITY 8 ------ //
+    //1
+      let ms = prompt("Enter your name: ")
+      function checkName(){
+        let msg = parseInt(ms)
+        if (msg <= 0 && msg>=0){console.log(`${msg} is invalid! Enter a name again: `)}
+        else if(msg){console.log(`You forgot to enter a name. Enter a name again: `)}
+        else{console.log(`Welcome ${ms.toUpperCase()} to the class!`)}
+      }
+
+    //2
+        let number = parseInt(prompt("Enter a number: "))
+        function checkNum(){
+          number2 = number%2
+          if(number2 > 0){console.log(`FALSE`)}
+          else{console.log(`TRUE`)}
+        }
+
+    //3
+        let lot = parseInt(prompt("Enter the number of games you want to play in this lottery: "))
+        function lottery(){
+          for(let outerCounter = 1 ; outerCounter<= lot ; outerCounter++){
+            console.log(`LOTTERY GAME NUMBER \t\t\t ${outerCounter}`)
+            for(let ngames<=99; ngames>0;){console.log(`The numbers for this game are ${ngames.random()}`)}
+          }
+        }
+
     /*
     //example 1
     function msg(){
@@ -126,34 +153,6 @@
     pickedIndex = colorPick(color.length - 1)
     console.log(`The picked color is ${colors[pickedIndex]}`)
     */
-
-    // ------ ACTIVITY 8 ------ //
-    //1
-      let ms = prompt("Enter your name: ")
-      function checkName(){
-        let msg = parseInt(ms)
-        if (msg <= 0 && msg>=0){console.log(`${msg} is invalid! Enter a name again: `)}
-        else if(msg){console.log(`You forgot to enter a name. Enter a name again: `)}
-        else{console.log(`Welcome ${ms.toUpperCase()} to the class!`)}
-      }
-
-    //2
-        let number = parseInt(prompt("Enter a number: "))
-        function checkNum(){
-          number2 = number%2
-          if(number2 > 0){console.log(`FALSE`)}
-          else{console.log(`TRUE`)}
-        }
-
-    //3
-        let lottery = parseInt(prompt("Enter the number of games you want to play in this lottery: "))
-        function lottery(){
-          for(let outerCounter = 1 ; outerCounter<= lottery ; outerCounter++){
-            console.log(`LOTTERY GAME NUMBER \t\t\t ${outerCounter}`)
-            for(let ngames<=99; ngames>0;){console.log(`The numbers for this game are ${ngames.random()}`)}
-          }
-        }
-
 
     </script>
   </body>
