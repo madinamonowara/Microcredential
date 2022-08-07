@@ -1,19 +1,112 @@
-*{box-sizing: auto}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: auto;
+}
 /* ACTIVITY 3 */
+section{
+  min-height: 100vh;
+  width: 100%;
+
+}
 .act3{text-align: center;}
 .pic1, .pic2, .pic3{position: relative; width: 30%; margin-left: 2%; height: 570px;}
 .pic1{filter: invert(100%);}
 .pic2{filter: blur(5px);}
-.pic3{filter: sepia(100%);}
-.photo_d1{display: block; float: right; position: absolute; text-align: left; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,1); border: solid 5px black; box-shadow: 2px 2px 5px white; padding: 1em 1em;}
+.pic3{filter: grayscale(100%);}
+.photo_d1{
+  border: solid 3px white;
+  padding: 1em;
+  width: 20%;
+  margin: auto;
+  position:relative;
+  color: white;
+  background-color: rgba(10,10,10,0.8);
+  margin-left: 70px;
+  margin-top: -240px;
+}
+.photo_d2{
+  border: solid 2px white;
+  width: 10%;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  margin: auto;
+  position:relative;
+  color: red;
+  font-weight: bolder;
+  background-color: rgba(211,211,211,0.8);
+  box-shadow: 2px 2px 20px white;
+  margin-left: 1100px;
+  margin-top: -100px;
+}
+/* IDEA: .photo_d2{text-align: center; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,0.8); box-shadow: 2px 2px 5px white; position: absolute; padding: 1em;} */
 
-.photo_d2{text-align: center; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,0.8); box-shadow: 2px 2px 5px white; position: absolute; padding: 1em;}
-.link_d2{display: block; background-color: magenta; margin-top: 1em; padding: 0.2em; border-radius: 9px; text-decoration: none;}
+.link_d2{display: block; color: white; background-color: black; margin-top: 1em; padding: 0.2em; border-radius: 9px; text-decoration: none;}
 .link_d2:hover{background-color: lightblue; top:30%, left:10%; right:10%; box-shadow: 0px 0px 5px 2px gray;}
 
+/* JUICE: THE DRINK */
+.photo_d30{
+  font-size: 25px;
+  width: 20%;
+  padding: 1em;
+  margin: auto;
+  position:relative;
+  color: lightyellow;
+  background-color: rgba(10,10,10,0.01);
+  margin-left: 550px;
+  margin-top: -252px;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+}
 
+/* SO YUMMY */
+.photo_d31{
+  width: 15%;
+  padding: 1em;
+  margin: auto;
+  position:relative;
+  color: hotpink;
+  background-color: rgba(10,10,10,0.01);
+  margin-left: 700px;
+  margin-top: -230px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  font-family: sans-serif;
+}
 
+/* GRATEFUL DRINKER */
+.photo_d32{
+  width: 15%;
+  padding: 1em;
+  margin: auto;
+  position:relative;
+  color: pink;
+  background-color: rgba(10,10,10,0.01);
+  margin-left: 480px;
+  margin-top: -130px;
+  font-weight: lighter;
+  text-align: center;
+  align-items: center;
+  font-size: 17px;
+}
 
+/* JUICE Connesiour */
+.photo_d33{
+  width: 25%;
+  padding: 1em;
+  margin: auto;
+  position:relative;
+  color: white;
+  background-color: rgba(10,10,10,0.01);
+  margin-left: 515px;
+  margin-top: 400px;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+}
 
 /* CLASS ACTIVITY */
 .title{font-family: elephant; font-size: 300%; text-align: center; }
