@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="activity15.css">
+    <title>Madina Monowara: Activity 15</title>
+  </head>
+  <body>
+    <h1>Madina Monowara: Activity 15</h1>
+    <div class="catbuttons">
+      <button type="button" class="button1" id="button1">Click to Get Cat Facts!</button>
+      <button type="button" class="button2" id="button2">Clear and Reset!</button>
+    </div>
+    <div class="container">
+      <p class="catfacts">Cat Facts! &#128008;</p>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="text/javascript">
+      //ACTIVTY 15:
+
+
+
+
+
+
+      //making a specific request using API headers
+      const getYear = async()=>{
+        const config = {headers: {Accept:'application/json'}}
+        const res = await axios.get('https://swapi.dev/api/people/1/')
+
+        console.log("Using headers in axios. NAME: ", res.data.name,"BIRTH YEAR: ", res.data.birth_year)
+      }
+      //choosing specific RESPONSE
+      const personID = async(id)=>{
+        try {
+          const res = await axios.get(`https://swapi.dev/api/people/${id}/`)
+          console.log(res.data)
+        } catch (e) {
+          console.log("ERROR!",e)
+        }
+      }
+      //making request using axias
+      let axio = axios.get("https://swapi.dev/api/people/1/")
+      //console.console.log(); request using axios
+      .then(res => {
+        console.log("RESPONSE using axios", res)
+      })
+      //try and  catch in fetch
+      //making multple request using detch
+      const loadPeople = async()=>{
+        try{
+          const res = await fetch('https://swapi.dev/api/people/1/')
+          const data = await res.json()
+          console.log(`Multiple response using fetch, 1st person`, data)
+          const res2 = await fetch('https://swapi.dev/api/people/2/')
+          const data2 = await res2.json()
+          console.log(`Multiple response using fetch, 2nd person`, data2)
+        } catch (e) {
+          console.log(`ERROR!`, e)
+        }
+      }
+      //making an AJAX request using fetch
+      fetch("https://swapi.dev/api/people/1/")
+      .then((res)=>{
+        console.log("LOADED!: using fetch", res)
+        res.json().then((data)=> console.log("JSON result using fetch", data))
+      })
+      //making an AJAX request using XMR
+      const req = new XMLHttpRequest:
+      req.onload = function(){
+        console.log("LOADED!: using XHR");
+        //console.log(this.response)
+        const person = JSON.parse(this.response)
+        console.log(`NAME: ${person.name}, HEIGHT: ${person.height}`)
+      }
+
+      req.onerror = function(){
+        console.log("ERROR!");
+        console.log(this);
+      }
+
+      req.open("GET", "https://swapi.dev/api/people/1/");
+      req.send();
+
+    </script>
+  </body>
+</html>
