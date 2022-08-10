@@ -162,43 +162,59 @@
           <h2 class="forty">Up to 40% Off! All Classes Included!</h2>
       </section>
 
+      <div class="toTop">
+        <a href="#">&#x270C;<br> Top </a>
+      </div>
 
-
-
-    <!-- IDEA: FOOTER -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h4 class="company">company</h4>
-            <ul class="companylist">
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="contact">Contact</h4>
-            <ul class="contactlist">
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">order status</a></li>
-              <li><a href="#">payment options</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="followus">follow us</h4>
-            <div class="socials">
-              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <!-- IDEA: FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4 class="company">company</h4>
+              <ul class="companylist">
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 class="contact">Contact</h4>
+              <ul class="contactlist">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 class="followus">follow us</h4>
+              <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+
+      <script type="text/javascript">
+      const toTop = document.querySelector('.toTop')
+      window.addEventListener('scroll', function(){
+        let pxTop = window.pageYOffset;
+        if (pxTop>80){
+          toTop.style.display = 'block';
+        }
+        else{
+          toTop.style.display = 'none';
+        }
+      })
+        
+      </script>
+
 
 
   </body>

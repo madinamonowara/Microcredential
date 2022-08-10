@@ -46,6 +46,9 @@
         </p>
     </div>
 
+    <div class="toTop">
+      <a href="#">&#x270C;<br> Top </a>
+    </div>
 
     <!-- IDEA: FOOTER -->
     <footer class="footer">
@@ -81,3 +84,15 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+    const toTop = document.querySelector('.toTop')
+    window.addEventListener('scroll', function(){
+      let pxTop = window.pageYOffset;
+      if (pxTop>80){
+        toTop.style.display = 'block';
+      }
+      else{
+        toTop.style.display = 'none';
+      }
+    })
