@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Madina Monowara - Project 2</title>
+    <style media="screen">
+    .input1{background-color: black; padding: 1em; font-weight: bold; color: white;}
+    .checkoutform{
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .success{
+      text-align: center;
+      font-family: monospace;
+      font-style: italic;
+    }
+    #myForm{
+      margin-left: 50px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+          <div>
+              <ul id="navbar">
+                  <li><a href="proj.html">Home</a></li>
+                  <li><a class="active" href="courses.html">Courses</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <!-- after
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="signup.html">SIGN UP</a></li>
+                  -->
+                  <li id="lg-bag"><a href="actualcart.html"><i class="far fa-shopping-bag"></i></a></li>
+              </ul>
+          </div>
+    </section>
+    <br>
+    <h2 class="checkoutform">CHECKOUT FORM</h2>
+    <br>
+    <br>
+    <h4 class="success">Successfully added to cart! Fill out the information below to the complete checkout process and offically enroll in your class!</h4>
+    <br>
+    <br>
+    <form id="myForm" action="cart.html" method="post">
+    <h2 class="nametitle">NAME</h2>
+      <label for="firstN">First Name: <input type="text" name="firstName" id="firstN"> </label>
+      <label for="lastN">Last Name: <input type="text" name="lastName" id="lastN"> </label>
+    <br>
+    <br>
+    <br>
+    <h2 class="nametitle">EMAIL</h2>
+      <label for="email">Email Address: <input type="text" name="email" id="email"> </label>
+    <br>
+    <br>
+    <br>
+    <h2 class="nametitle">ADDRESS</h2>
+      <label for="address">Address: <input type="text" name="address" id="address"> </label>
+      <br>
+      <br>
+      <label for="apt">Apt: <input type="text" name="apt" id="apt"> </label>
+      <br>
+      <br>
+      <label for="city">City/County: <input type="text" name="city" id="city"> </label>
+      <br>
+      <br>
+      <label for="state">State: <input type="text" name="state" id="state"> </label>
+      <br>
+      <br>
+      <label for="zipcode">ZipCode: <input type="text" name="zipcode" id="zipcode"> </label>
+      <br>
+      <br>
+      <label for="country">Country: <input type="text" name="country" id="country"> </label>
+      <br>
+      <br>
+      <br>
+    <h2 class="nametitle">BILLING INFORMATION</h2>
+      <label for="cardnumber">Card Number: <input type="text" name="cardnumber" id="cardnumber"> </label>
+      <br>
+      <br>
+      <label for="expirationdate">Expiration Date: <input type="text" name="expirationdate" id="expirationdate"> </label>
+      <br>
+      <br>
+      <label for="nameoncard">Name On Card: <input type="text" name="nameoncard" id="nameoncard"> </label>
+      <br>
+      <br>
+      <label for="cvv">CVV: <input type="text" name="cvv" id="cvv"> </label>
+      <br>
+      <br>
+      <label for="zipcode1">ZipCode: <input type="text" name="zipcode1" id="zipcode1"> </label>
+      <br>
+      <br>
+      <input type="submit" value="BUY" class="input1">
+    </form>
+
+
+
+
+
+
+    <script type="text/javascript">
+    //STORAGE
+    const firstName = document.querySelector('#firstN').value
+    const lastName = document.querySelector('#lastN').value
+
+    const email = document.querySelector('#email').value
+
+    const address = document.querySelector('#address').value
+    const apt = document.querySelector('#apt').value
+    const city = document.querySelector('#city').value
+    const state = document.querySelector('#state').value
+    const zipcode = document.querySelector('#zipcode').value
+    const country = document.querySelector('#country').value
+
+    const cardnumber= document.querySelector('#cardnumber').value
+    const expirationdate = document.querySelector('#expirationdate').value
+    const nameoncard = document.querySelector('#nameoncard').value
+    const cvv = document.querySelector('#cvv').value
+    const zipcode1 = document.querySelector('#zipcode1').value
+
+    const submitForm = document.querySelector('#input1')
+
+      submitForm.addEventListener('click', function(
+        {
+          sessionStorage.setItem('FN', firstName);
+          sessionStorage.setItem('LN', lastName);
+
+          sessionStorage.setItem('EMAIL', email);
+
+          sessionStorage.setItem('ADDY', address);
+          sessionStorage.setItem('APT', apt);
+          sessionStorage.setItem('CITY', city);
+          sessionStorage.setItem('STATE', state);
+          sessionStorage.setItem('ZIPCODE', zipcode);
+          sessionStorage.setItem('COUNTRY', country);
+
+          sessionStorage.setItem('CARDNUM', cardnumber);
+          sessionStorage.setItem('EXPDATE', expirationdate);
+          sessionStorage.setItem('NAMEONCARD', nameoncard);
+          sessionStorage.setItem('CVV', cvv);
+          sessionStorage.setItem('ZIPCODE1', zipcode1);
+
+
+        })
+
+
+
+    </script>
+    <br>
+    <br>
+
+    <!-- IDEA: FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="socials">
+              <a href="https://www.facebook.com/moi.newyork/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/colorfactoryco?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/spyscape/?hl=e" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/moic" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    </body>
+  </html>
